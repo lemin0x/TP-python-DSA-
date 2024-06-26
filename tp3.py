@@ -2,7 +2,13 @@
 
 #files 
 
-def Affichier(fichier):
-    fichier = open(fichier , "r")
-    print(fichier.read())
-    fichier.close()
+# def Affichier(fichier):
+#     fichier = open(fichier , "r")
+#     print(fichier.read())
+#     fichier.close()
+
+f= open("test.txt",mode="w" ,encoding="utf-8")
+
+print(f.write())
+
+f.close()
