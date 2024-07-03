@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .layer {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 8px solid blue;
+            border-left-color: transparent;
+            position: absolute;
+        }
+
+        .layer1 {
+            width: 310px;
+            height: 310px;
+            
+        }
+
+        .layer2 {
+            width: 300px;
+            height: 300px;
+            transform: rotate(30deg);
+            border: 8px solid red;
+
+        }
+
+        .layer3 {
+            width: 290px;
+            height: 290px;
+            transform: rotate(90deg);
+            border: 8px solid rgb(16, 14, 21);
+
+        }
+        .fuck{
+            border: 40px;
+            width: 50px;
+            height: 50px;
+            margin: 80px;
+            rotate: -50%;
+            font-size: xx-large;
+            flex-direction: column-reverse;
+            font-style: oblique;
+            display: flex;
+            text-decoration: line-through;
+            transition: 3ms;
+        }
+        .fuck ::before{
+            display: grid;
+        }
+        .fuck ::after{
+            animation-fill-mode: both;
+            animation-duration: 5s;
+        }
+    </style>
+    <title>Three Layers of Divs</title>
+</head>
+<body>
+    <div class="container">
+        <div class="layer layer1"></div>
+        <div class="layer layer2"></div>
+        <div class="layer layer3"></div>
+        <div class="fuck">fuck you dosage </div>
+    </div>
+</body>
+</html>
